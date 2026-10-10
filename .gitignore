@@ -1,7 +1,6 @@
 __pycache__/
 *.py[cod]
 *.egg-info/
-
+.zcode/
 .playwright-mcp/
-node.zip/
-cu.json
+node.zip
