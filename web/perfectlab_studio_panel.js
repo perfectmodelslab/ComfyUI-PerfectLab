@@ -9,25 +9,25 @@
 import { app } from "../../scripts/app.js";
 import { chipGrid, tile, itemImg, fitNode, toggleFav, attachPresets,
          libAdd, libImgPut, libChips, wireLib, libSync }
-    from "./perfectlab_panel_factory.js?v=1.0.0";
+    from "./perfectlab_panel_factory.js?v=1.0.1";
 import { POSE_LIB, EXPRESSION_LIB, FRAMING_LIB, FOCUS_LIB, FORMAT_LIB,
          ARC_LIB, ARC_DESC, framingText, resolveChoices, resolveWildcards }
-    from "./perfectlab_lib.js?v=1.0.0";
+    from "./perfectlab_lib.js?v=1.0.1";
 import { PERSONA_FIELDS, TOPS_LIB, BOTTOMS_LIB, FOOTWEAR_LIB, HEADWEAR_LIB,
          ACCESSORIES_LIB, LOOK_COLORS, FOOTWEAR_COLORS, HEADWEAR_COLORS,
          ACC_COLORS, FOOTWEAR_MATERIALS, MATERIALS, MAT_EXTRA, MATERIAL_TINT,
          LIGHT_SETUPS, STYLES, FILMS, LOCATIONS, WEATHER,
-         LENS_LIB, NEG_PRESETS } from "./perfectlab_libraries.js?v=1.0.0";
+         LENS_LIB, NEG_PRESETS } from "./perfectlab_libraries.js?v=1.0.1";
 
 // the kit's stylesheet rides along with this module
 {
     const link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = new URL("styles.css", import.meta.url).href + "?v=1.0.0";
+    link.href = new URL("styles.css", import.meta.url).href + "?v=1.0.1";
     document.head.append(link);
 }
 
-const GUIDE_V = "1.0.0";
+const GUIDE_V = "1.0.1";
 
 
 
@@ -92,7 +92,6 @@ function readState(node) {
         const raw = node.widgets?.find(w => w.name === "node_data")?.value;
         const s = raw ? JSON.parse(raw) : null;
         if (s && s._v === 2) return s;
-        }
     } catch (e) { /* fall through */ }
     return DEFAULT_STATE();
 }
@@ -1075,7 +1074,7 @@ function buildPanel(node) {
             <svg viewBox="0 0 24 24" width="13" height="13"><path fill="currentColor" d="M21.9 4.6c.3-1.3-.8-2-1.9-1.6L2.7 9.7c-1.3.5-1.2 1.9-.1 2.3l4.4 1.4 1.7 5.2c.3.9 1.5 1.2 2.2.5l2.3-2.1 4.4 3.2c.9.6 2.1.2 2.3-.9l3.3-14.7zM8.2 12.9l9.4-5.9c.4-.3.8.2.5.6l-7.7 7-.3 3.1-1.9-4.8z"/></svg>
             @PerfectJohny</a>
         <div class="plx-rail-keys">X · clear card<br>Shift+X · clear section<br>Alt+X · reset all</div>
-        <div class="plx-rail-ver">PerfectLab v1.0.0</div>`;
+        <div class="plx-rail-ver">PerfectLab v1.0.1</div>`;
         // the category row: one click opens (and selects); a second closes
         rail.querySelectorAll("[data-sec]").forEach(r => r.onclick = e => {
             if (e.target.dataset.off !== undefined || e.target.dataset.subnav) return;

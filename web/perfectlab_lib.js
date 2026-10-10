@@ -9,7 +9,7 @@
 // Python engine sources); this file re-exports them and keeps the logic
 // tables that mirror series_nodes.py.
 import { POSE_LIB, EXPRESSION_LIB, FRAMING_LIB, FOCUS_LIB, FORMAT_LIB }
-    from "./perfectlab_libraries.js?v=1.0.0";
+    from "./perfectlab_libraries.js?v=1.0.1";
 export { POSE_LIB, EXPRESSION_LIB, FRAMING_LIB, FOCUS_LIB, FORMAT_LIB };
 
 export const ARC_LIB = {

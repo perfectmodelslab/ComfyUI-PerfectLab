@@ -208,7 +208,7 @@ export const libSync = (scope, host, rerender) => {
     });
 };
 
-const GUIDE_V = "1.0.0";
+const GUIDE_V = "1.0.1";
 export const itemImg = (cat, i) =>
     `extensions/PerfectLab/guide/items/${cat}/${String(i).padStart(2, "0")}.jpg?v=${GUIDE_V}`;
 

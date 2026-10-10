@@ -4,3 +4,4 @@ __pycache__/
 
 .playwright-mcp/
 node.zip/
+cu.json
