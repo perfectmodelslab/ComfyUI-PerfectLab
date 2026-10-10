@@ -1,0 +1,4 @@
+# "Sponsor this project" button on the repo page.
+# Replace or extend when a donation platform (Boosty, Patreon, ko-fi...) is set up:
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
+custom: ["https://t.me/PerfectJohny"]

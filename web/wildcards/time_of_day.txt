@@ -1,0 +1,7 @@
+# __time_of_day__ pulls one line -- write it in a scene detail line
+early morning
+late morning
+midday
+golden hour
+blue hour dusk
+midnight

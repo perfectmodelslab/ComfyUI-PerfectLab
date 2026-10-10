@@ -1,0 +1,8 @@
+# one line per roll -- picked from the shot's seed
+# __mood__ anywhere in your own text pulls one of these
+serene calm
+playful energy
+confident swagger
+dreamy softness
+fierce attitude
+glowing happiness
